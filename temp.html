@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="unit.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="title">Unit <span>Converter</span></h1>
+    </header>
+
+    <main>
+        <section class="converter-section">
+            <h2>Temperature Converter</h2>
+            <div id="box" class="converter-box">
+                <div class="input-div">
+                    <label for="tempInputType">From:</label>
+                    <select id="tempInputType" class="option">
+                        <option value="Celsius">Celsius</option>
+                        <option value="Kelvin">Kelvin</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Infrared thermometer">Infrared thermometer</option>
+                    </select>
+                    <input type="number" id="tempInput" class="input" placeholder="Input" />
+                </div>
+                <div class="input-div">
+                    <label for="tempResultType">To:</label>
+                    <select id="tempResultType" class="option">
+                        <option value="Celsius">Celsius</option>
+                        <option value="Kelvin">Kelvin</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Infrared thermometer">Infrared thermometer</option>
+                    </select>
+                    <input type="number" id="tempResult" class="input" placeholder="Result" readonly />
+                </div>
+            </div>
+        </section>
+
+        <section class="navigation-buttons">
+            <div class="buttons">
+                <ul>
+                    <li><a href="length.html">Length-Converter</a></li>
+                    <li><a href="area.html">Area-Converter</a></li>
+                    <li><a href="weight.html">Weight-Converter</a></li>
+                </ul>
+            </div>
+
+            <div class="btn">
+                <ul>
+                    <li><a href="temp.html">Temp-converter</a></li>
+                    <li><a href="volume.html">Volume-Converter</a></li>
+                    <li><a href="time.html">Time-Converter</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="go-home-btn">
+            <a href="main.html" class="btn-home">Go to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer content can go here -->
+    </footer>
+
+    <script src="temp.js"></script>
+</body>
+
+</html>

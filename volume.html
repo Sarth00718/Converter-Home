@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="unit.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="title">Unit <span>Converter</span></h1>
+    </header>
+
+    <main>
+        <section class="converter-section">
+            <h2>Volume Converter</h2>
+            <div id="box" class="converter-box">
+                <div class="input-div">
+                    <label for="inputType">From:</label>
+                    <select id="inputType" class="option">
+                        <option value="Cubic Meter">Cubic Meter</option>
+                        <option value="Cubic Kilometer">Cubic Kilometer</option>
+                        <option value="Cubic Centimeter">Cubic Centimeter</option>
+                        <option value="Cubic Milimeter">Cubic Milimeter</option>
+                        <option value="Liter">Liter</option>
+                        <option value="Mililiter">Mililiter</option>
+                        <option value="US Gallon">US Gallon</option>
+                        <option value="US Quart">US Quart</option>
+                        <option value="US Pint">US Pint</option>
+                        <option value="US Cup">US Cup</option>
+                        <option value="US Fluid Ounce">US Fluid Ounce</option>
+                        <option value="US Table Spoon">US Table Spoon</option>
+                        <option value="US Tea Spoon">US Tea Spoon</option>
+                        <option value="Imperial Gallon">Imperial Gallon</option>
+                        <option value="Imperial Quart">Imperial Quart</option>
+                        <option value="Imperial Pint">Imperial Pint</option>
+                        <option value="Imperial Fluid Ounce">Imperial Fluid Ounce</option>
+                        <option value="Imperial Table Spoon">Imperial Table Spoon</option>
+                        <option value="Imperial Tea Spoon">Imperial Tea Spoon</option>
+                        <option value="Cubic Mile">Cubic Mile</option>
+                        <option value="Cubic Yard">Cubic Yard</option>
+                        <option value="Cubic Foot">Cubic Foot</option>
+                        <option value="Cubic Inch">Cubic Inch</option>
+                    </select>
+                    <input type="number" id="input" class="input" placeholder="Input" />
+                </div>
+                <div class="input-div">
+                    <label for="resultType">To:</label>
+                    <select id="resultType" class="option">
+                        <option value="Cubic Meter">Cubic Meter</option>
+                        <option value="Cubic Kilometer">Cubic Kilometer</option>
+                        <option value="Cubic Centimeter">Cubic Centimeter</option>
+                        <option value="Cubic Milimeter">Cubic Milimeter</option>
+                        <option value="Liter">Liter</option>
+                        <option value="Mililiter">Mililiter</option>
+                        <option value="US Gallon">US Gallon</option>
+                        <option value="US Quart">US Quart</option>
+                        <option value="US Pint">US Pint</option>
+                        <option value="US Cup">US Cup</option>
+                        <option value="US Fluid Ounce">US Fluid Ounce</option>
+                        <option value="US Table Spoon">US Table Spoon</option>
+                        <option value="US Tea Spoon">US Tea Spoon</option>
+                        <option value="Imperial Gallon">Imperial Gallon</option>
+                        <option value="Imperial Quart">Imperial Quart</option>
+                        <option value="Imperial Pint">Imperial Pint</option>
+                        <option value="Imperial Fluid Ounce">Imperial Fluid Ounce</option>
+                        <option value="Imperial Table Spoon">Imperial Table Spoon</option>
+                        <option value="Imperial Tea Spoon">Imperial Tea Spoon</option>
+                        <option value="Cubic Mile">Cubic Mile</option>
+                        <option value="Cubic Yard">Cubic Yard</option>
+                        <option value="Cubic Foot">Cubic Foot</option>
+                        <option value="Cubic Inch">Cubic Inch</option>
+                    </select>
+                    <input type="number" id="result" class="input" placeholder="Result" readonly />
+                </div>
+            </div>
+        </section>
+
+        <section class="navigation-buttons">
+            <div class="buttons">
+                <ul>
+                    <li><a href="length.html">Length-Converter</a></li>
+                    <li><a href="area.html">Area-Converter</a></li>
+                    <li><a href="weight.html">Weight-Converter</a></li>
+                </ul>
+            </div>
+
+            <div class="btn">
+                <ul>
+                    <li><a href="temp.html">Temp-converter</a></li>
+                    <li><a href="volume.html">Volume-Converter</a></li>
+                    <li><a href="time.html">Time-Converter</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="go-home-btn">
+            <a href="main.html" class="btn-home">Go to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer content can go here -->
+    </footer>
+
+    <script src="volume.js"></script>
+</body>
+
+</html>

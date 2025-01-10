@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConverterHome</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans bg-gray-100 text-gray-800">
+  <header class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white">
+    <div class="continer flex mx-auto justify-between items-center p-4">
+      <img src="image.png" alt="ConverterHome Logo" class="h-12">
+      <button id="menuButton" class="lg:hidden items-center text-white "><svg class="w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg></button>
+      <nav class="navMenu hidden lg:flex space-x-8">
+        <a href="home.html" class="hover:text-yellow-500 transition">Home</a>
+        <a href="about.html" class="hover:text-yellow-500 transition">About</a>
+        <a href="service.html" class="hover:text-yellow-500 transition">Services</a>
+        <a href="contact.html" class="hover:text-yellow-500 transition">Contact</a>
+      </nav>
+    </div>
+    <div id="mobileMenu" class="hidden lg:hidden bg-gray-100 text-gray-800 p-4">
+      <a href="home.html" class="block py-2 hover:bg-gray-100">Home</a>
+      <a href="about.html" class="block py-2 hover:bg-gray-100">About</a>
+      <a href="service.html" class="block py-2 hover:bg-gray-100">Services</a>
+      <a href="contact.html" class="block py-2 hover:bg-gray-100">Contact</a>
+
+    </div>
+  </header>
+
+
+
+  <header class="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-24">
+    <div class="absolute inset-0 bg-cover bg-center opacity-50"></div>
+    <div class="container mx-auto text-center relative z-10">
+      <div class="text-5xl font-bold mb-4">UNIT CONVERTER WEBSITE</div>
+      <div class="text-2xl mb-8">ENGINEERING UNIT & CURRENCY</div>
+      <div class="space-x-4">
+        <button onclick="window.location.href = 'about.html'"
+          class="bg-yellow-500 text-black px-8 py-3 rounded-full hover:bg-yellow-400 transition">CLICK HERE</button>
+        <button id="loginBtn" class="bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-600 transition">LOG
+          IN</button>
+      </div>
+
+      <div class="mt-10 flex justify-center">
+        <div class="login-form hidden" id="loginForm">
+          <div class="max-w-lg w-full bg-white p-8 rounded-lg shadow-xl">
+            <h2 class="text-2xl font-semibold text-black mb-6 text-center">SIGN IN</h2>
+            <form id="registrationForm" action="main.html">
+              <div class="mb-6">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
+                <input type="email" id="email" name="email" required
+                  class="w-full text-black px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div class="mb-6">
+                <label for="phoneNumber" class="block text-sm font-medium text-gray-700">Phone no.:</label>
+                <input type="number" id="phoneNumber" name="number" required
+                  class="w-full text-black px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div class="mb-6">
+                <label for="password" class="block text-sm font-medium text-gray-700">Password:</label>
+                <input type="password" id="password" name="password" required
+                  class="w-full text-black px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div class="mb-4">
+                <input type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-500 transition"
+                  value="Submit">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <footer class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white py-12">
+    <div class="container mx-auto flex space-x-16">
+      <div class="footer-content ml-5">
+        <h2 class="text-xl font-semibold">About Us</h2>
+        <p>We are committed to providing easy-to-use unit conversion tools for everyone. It is my Introduction to Web
+          Programming project.</p>
+      </div>
+      <div class="footer-content">
+        <h2 class="text-xl font-semibold">Contact Us</h2>
+        <p>Email: sarthnarola007@gmail.com</p>
+        <p>Email: 23bce194@nirmauni.ac.in</p>
+        <p>Phone Number: 7046053000</p>
+      </div>
+      <div class="footer-content">
+        <h2 class="text-xl font-semibold">Follow Us</h2>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-yellow-500 transition">Facebook</a></li>
+          <li><a href="#" class="hover:text-yellow-500 transition">Twitter</a></li>
+          <li><a href="#" class="hover:text-yellow-500 transition">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('loginBtn').addEventListener('click', function () {
+      const loginForm = document.getElementById('loginForm');
+      loginForm.classList.toggle('hidden');
+    });
+
+    document.getElementById('menuButton').addEventListener('click', function () {
+      const mobileMenu = document.getElementById('mobileMenu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+
+</html>

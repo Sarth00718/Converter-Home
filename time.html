@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="unit.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="title">Unit <span>Converter</span></h1>
+    </header>
+
+    <main>
+        <section class="converter-section">
+            <h2>Time Converter</h2>
+            <div id="box" class="converter-box">
+                <div class="input-div">
+                    <label for="inputType">From:</label>
+                    <select id="inputType" class="option">
+                        <option value="Second">Second</option>
+                        <option value="Milisecond">Milisecond</option>
+                        <option value="Microsecond">Microsecond</option>
+                        <option value="Nanosecond">Nanosecond</option>
+                        <option value="Picosecond">Picosecond</option>
+                        <option value="Minute">Minute</option>
+                        <option value="Hour">Hour</option>
+                        <option value="Day">Day</option>
+                        <option value="Week">Week</option>
+                        <option value="AMonth">Month</option>
+                        <option value="Year">Year</option>
+                    </select>
+                    <input type="number" id="input" class="input" placeholder="Input" />
+                </div>
+                <div class="input-div">
+                    <label for="resultType">To:</label>
+                    <select id="resultType" class="option">
+                        <option value="Second">Second</option>
+                        <option value="Milisecond">Milisecond</option>
+                        <option value="Microsecond">Microsecond</option>
+                        <option value="Nanosecond">Nanosecond</option>
+                        <option value="Picosecond">Picosecond</option>
+                        <option value="Minute">Minute</option>
+                        <option value="Hour">Hour</option>
+                        <option value="Day">Day</option>
+                        <option value="Week">Week</option>
+                        <option value="AMonth">Month</option>
+                        <option value="Year">Year</option>
+                    </select>
+                    <input type="number" id="result" class="input" placeholder="Result" readonly />
+                </div>
+            </div>
+        </section>
+
+        <section class="navigation-buttons">
+            <div class="buttons">
+                <ul>
+                    <li><a href="length.html">Length-Converter</a></li>
+                    <li><a href="area.html">Area-Converter</a></li>
+                    <li><a href="weight.html">Weight-Converter</a></li>
+                </ul>
+            </div>
+
+            <div class="btn">
+                <ul>
+                    <li><a href="temp.html">Temp-converter</a></li>
+                    <li><a href="volume.html">Volume-Converter</a></li>
+                    <li><a href="time.html">Time-Converter</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="go-home-btn">
+            <a href="main.html" class="btn-home">Go to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer content can go here -->
+    </footer>
+
+    <script src="time.js"></script>
+</body>
+
+</html>
